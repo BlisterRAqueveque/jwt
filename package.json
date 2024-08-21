@@ -1,0 +1,29 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.1",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0",
+    "promise-mysql": "^5.2.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}
