@@ -16,17 +16,20 @@ const authenticateJWT = (req = request, res = response, next = next) => {
 };
 
 const generateJwt = async (user) => {
-  const payload = {
+  const payload = { //* Generamos el payload con la información del usuario
     sub: user.id,
     username: user.username,
     name: user.nombre,
   };
 
-  const options = {
+  const options = { //* Le damos una validez al token de 24 horas
     expiresIn: "24h",
   };
-
+  //! Retornamos el token
   return jwt.sign(payload, config.secretKey, options);
 };
 
 module.exports = { authenticateJWT, generateJwt };
+
+
+

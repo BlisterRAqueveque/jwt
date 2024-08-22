@@ -9,3 +9,6 @@ router.post("/users/login", methods.login);
 router.get("/users/:id", authenticateJWT, methods.getOne);
 
 module.exports = router;
+
+
+
