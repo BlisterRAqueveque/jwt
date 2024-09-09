@@ -4,6 +4,9 @@ const methods = require("../controllers/upload-file.controller");
 
 const router = Router();
 
-router.post("/upload/:id", authenticateJWT, methods.postFile);
+router.post("/upload", authenticateJWT, methods.postFile);
 
 module.exports = router;
+
+
+
