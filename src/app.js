@@ -1,3 +1,5 @@
+// Manejo de las solicitudes HTTP Con express
+
 const express = require("express");
 const morgan = require("morgan");
 const fileUpload = require("express-fileupload");
@@ -13,7 +15,9 @@ const envs = require("./configuration/envs");
 const app = express();
 
 //* Cors
-app.use(cors());
+app.use(cors({
+  origin: '*.its.edu.ar'
+}));
 
 //* Settings
 app.set("port", envs); //! The port
