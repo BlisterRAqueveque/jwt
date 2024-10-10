@@ -1,7 +1,7 @@
 let sockets = [];
 let socketsInfo = [];
 
-const socketHandler = (socket, io) => {
+const socketConnections = (socket, io) => {
   console.log(`Usuario conectado: ${socket.id}`);
 
   sockets.push(socket);
@@ -41,4 +41,4 @@ const socketHandler = (socket, io) => {
   });
 };
 
-module.exports = { socketHandler };
+module.exports = { socketHandler: socketConnections };

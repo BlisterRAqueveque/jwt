@@ -22,7 +22,7 @@ const main = () => {
 
   // Levantar el servidor de Socket.IO
   io.on("connection", (socket /* La conexión del usuario */) => {
-    socketHandler.socketHandler(socket, io);
+    socketHandler.socketConnections(socket, io);
   });
 
   console.log(`Server on port ${envs.port}`);
